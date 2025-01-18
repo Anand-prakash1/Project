@@ -1,0 +1,52 @@
+#container{
+    height: 250px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height: 80px;
+    width: 60px;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* Centers text vertically */
+    position: relative; /* Allows child element positioning */
+    overflow: hidden; /* Ensures clean boundaries for text */
+    transition: all 2s ease;
+}
+
+#container div:hover{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.900);
+    transition: 2s;
+
+}
+
+#container div:hover span {
+    transform: translateY(20px); 
+    transition: 2s ease-in-out;
+    position: relative;
+    top: 50%; 
+}
+
+#container div:hover span {
+    transform: translateY(0); /* Ensure the text stays centered */
+    transition: all 0.5s ease; /* Smooth text transition */
+}
